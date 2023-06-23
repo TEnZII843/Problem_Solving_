@@ -1,15 +1,8 @@
-#!/bin/ruby
-
 require 'json'
 require 'stringio'
 
 def simpleArraySum(ar)
-    sum = 0
-
-    ar.each do |number|
-        sum += number
-    end
-    return sum
+    return ar.sum
 
 end
 

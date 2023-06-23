@@ -2,7 +2,6 @@ require 'json'
 require 'stringio'
 
 def aVeryBigSum(ar)
-    # Write your code here
     sum=0
     ar.each do|i|
         sum = i+sum

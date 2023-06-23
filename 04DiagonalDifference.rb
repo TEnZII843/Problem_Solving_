@@ -1,17 +1,7 @@
-#!/bin/ruby
-
 require 'json'
 require 'stringio'
 
-#
-# Complete the 'diagonalDifference' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts 2D_INTEGER_ARRAY arr as parameter.
-#
-
 def diagonalDifference(arr)
-    # Write your code here
     len = arr.length
     primary_sum = 0
     (0...len).each do |i|

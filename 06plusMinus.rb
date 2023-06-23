@@ -1,5 +1,4 @@
 def plusMinus(arr)
-    # Write your code here
     puts(arr)
     positive = 0
     negative = 0
@@ -19,7 +18,5 @@ def plusMinus(arr)
 end
 
 n = gets.strip.to_i
-
 arr = gets.rstrip.split.map(&:to_i)
-
 plusMinus(arr)
