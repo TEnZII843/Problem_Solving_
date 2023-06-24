@@ -1,20 +1,25 @@
-def plusMinus(arr)
-    puts(arr)
-    positive = 0
-    negative = 0
+def plusMinus(arr, n)
+    pos = 0
+    neg = 0
     zero = 0
-    arr.each do |number|
-        if arr[number] > 0
-            positive = positive + 1
-        elsif arr[number] < 0
-            negative = negative + 1
-        elsif arr[number] == 0
-            zero = zero + 1    
+    arr.each do |a|
+        if a > 0
+            pos += 1
+        elsif a < 0
+            neg += 1
+        else
+            zero += 1
+        end
     end
-    puts(positive/arr.length)
-    puts(negative/arr.length)
-    puts(zero/arr.length)
-
+    if n > 0
+        puts pos.fdiv(n)
+        puts neg.fdiv(n)
+        puts zero.fdiv(n)
+    else
+        puts 0
+        puts 0
+        puts 0
+    end
 end
 
 n = gets.strip.to_i
